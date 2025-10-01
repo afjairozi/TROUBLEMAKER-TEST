@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TROUBLEMAKER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #1e1e1e;
+      color: #fff;
+    }
+    header {
+      background: #cc0000;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .hero img {
+      max-width: 80%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeZoomIn 1.5s forwards;
+    }
+    .motto-title {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ff3333;
+      opacity: 0;
+      animation: fadeInTitle 1.5s forwards 0.5s;
+    }
+    .motto {
+      margin-top: 15px;
+    }
+    .motto span {
+      display: block;
+      font-size: 31px;
+      font-weight: bold;
+      color: #ff3333;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      margin: 10px auto;
+      text-shadow: 0 0 5px #ff6666, 0 0 8px #ff9999;
+      animation-fill-mode: forwards;
+    }
+    .motto span:first-child {
+      animation: typing 4s steps(30) forwards 2s;
+    }
+    .motto span:last-child {
+      animation: typing 3s steps(30) forwards 6.5s; /* lebih cepat */
+    }
+
+    /* Members Section */
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ff3333;
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .member-card {
+      background: #333;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .member-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    .member-card h4 {
+      margin: 0 0 5px 0;
+    }
+    .member-card p {
+      margin: 0;
+      color: #ff9999;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeZoomIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeInTitle {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TROUBLEMAKER</h1>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="TROUBLE MAKER.jpg" alt="Foto TROUBLEMAKER">
+    <div class="motto-title">Motto</div>
+    <div class="motto">
+      <span>Bikin Masalah</span>
+      <span>Cari Solusi</span>
+    </div>
+  </section>
+
+  <!-- Members Section -->
+  <section id="members">
+    <div class="section-title">Anggota Kelompok</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <h4>Marvel</h4>
+        <p>081286251661</p>
+      </div>
+      <div class="member-card">
+        <h4>Fauza</h4>
+        <p>085240359302</p>
+      </div>
+      <div class="member-card">
+        <h4>Risdil</h4>
+        <p>0822291090110</p>
+      </div>
+      <div class="member-card">
+        <h4>Ozil</h4>
+        <p>081298993630</p>
+      </div>
+      <div class="member-card">
+        <h4>Nolfin</h4>
+        <p>085343614956</p>
+      </div>
+      <div class="member-card">
+        <h4>Nando</h4>
+        <p>085343582643</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 TROUBLEMAKER
+</footer>
+
+</body>
+</html>
